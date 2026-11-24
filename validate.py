@@ -16,7 +16,8 @@ ROOT = pathlib.Path(__file__).parent
 ARTICLES = ROOT / "articles"
 SITE = "https://indonesiabriquettescharcoal.net"
 REQUIRED = ["slug", "date", "title", "seo_title", "description", "excerpt",
-            "primary_keyword", "keywords"]
+            "primary_keyword", "keywords", "image"]
+CATALOG = {c["file"]: c for c in json.loads((ROOT / "images" / "catalog.json").read_text())}
 BANNED_TAGS = re.compile(r"<\s*(script|style|iframe|object|embed|form|input|h1)\b", re.I)
 EVENT_ATTR = re.compile(r"\son[a-z]+\s*=", re.I)
 
@@ -50,6 +51,10 @@ def check(folder):
         errs.append("seo_title > 60 chars")
     if not 120 <= len(meta["description"]) <= 160:
         errs.append(f"description must be 120-160 chars (is {len(meta['description'])})")
+    if meta["image"] not in CATALOG or not (ROOT / meta["image"]).is_file():
+        errs.append(f"image must be one of images/catalog.json (got {meta['image']})")
+    if "<img" in body.lower():
+        errs.append("no <img> in body.html; use meta.image (featured image) instead")
     if len(meta["excerpt"]) > 160:
         errs.append("excerpt > 160 chars")
     if BANNED_TAGS.search(body) or EVENT_ATTR.search(body):

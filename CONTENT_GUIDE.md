@@ -20,10 +20,36 @@ Two articles per week (Monday and Thursday). Quality over quantity: if you canno
   "excerpt": "<=160 chars summary",
   "primary_keyword": "...",
   "keywords": ["secondary 1", "secondary 2"],
-  "sources": ["https://... pages actually opened"]
+  "sources": ["https://... pages actually opened"],
+  "image": "images/<file>.jpg  (REQUIRED, from images/catalog.json)",
+  "image_alt": "optional: alt text if the catalogue alt does not fit this article"
 }
 ```
 `articles/<slug>/body.html` — plain HTML only: `<p> <h2> <h3> <ul> <ol> <li> <table> <thead> <tbody> <tr> <th> <td> <a> <strong> <em>`. No `<h1>` (the title is the H1), no CSS/scripts/images.
+
+## Featured image (required)
+Every article sets `"image"` to ONE photo from `images/catalog.json` (real photos taken at PT DAN's production partner in Indonesia, Sept 2026). The server adds it to the WordPress Media Library and sets it as the featured image (also used as the share preview).
+- Pick the photo that best matches the topic; prefer one not used by the latest 3 articles.
+- Captions/text must never claim the photo shows PT DAN's own factory — it is a **production partner** facility.
+- Never add new photos, people's faces, documents or other brands' packaging. Never put `<img>` in body.html.
+
+| File | Shows |
+| --- | --- |
+| images/coconut-charcoal-cubes-drying-tray.jpg | cubes on a wooden drying tray |
+| images/coconut-charcoal-cube-burning-check.jpg | cube glowing on an electric heater (burning check) — used 2026-11-23 |
+| images/coconut-charcoal-cubes-cutting-line.jpg | freshly cut cubes on the cutting line |
+| images/coconut-charcoal-cube-cutting-machine.jpg | cube cutting machine |
+| images/coconut-charcoal-cube-weight-check.jpg | single cube on a digital scale |
+| images/coconut-shell-charcoal-raw-material-weighing.jpg | sack of raw coconut shell charcoal on a scale |
+| images/coconut-charcoal-mixing-machine.jpg | mixer blending charcoal powder with binder |
+| images/coconut-charcoal-briquette-extruder.jpg | extruder pressing charcoal strands |
+| images/coconut-charcoal-drying-racks.jpg | drying racks with trays |
+| images/coconut-charcoal-briquettes-stacked-trays.jpg | stacked trays of briquettes on a cart |
+| images/coconut-charcoal-briquette-drying-oven.jpg | tray going into a drying oven |
+| images/coconut-charcoal-packed-pallets-warehouse.jpg | shrink-wrapped pallets in the warehouse |
+| images/coconut-charcoal-briquette-production-hall.jpg | production hall overview |
+| images/coconut-shell-charcoal-grinding-machine.jpg | grinding machine and cyclone |
+| images/coconut-charcoal-final-inspection-area.jpg | "Final inspection area" sign on the line |
 
 ## SEO rules
 1. Keyword research first: check how buyers search (top results, "People also ask"), pick 2–4 secondary keywords and natural variants (shisha/hookah charcoal, coconut charcoal/coconut shell charcoal briquettes, supplier/exporter from Indonesia, wholesale/bulk).
