@@ -49,7 +49,7 @@ Every article sets `"image"` to ONE photo from `images/catalog.json` (real photo
 | images/coconut-charcoal-packed-pallets-warehouse.jpg | shrink-wrapped pallets in the warehouse |
 | images/coconut-charcoal-briquette-production-hall.jpg | production hall overview |
 | images/coconut-shell-charcoal-grinding-machine.jpg | grinding machine and cyclone |
-| images/coconut-charcoal-final-inspection-area.jpg | "Final inspection area" sign on the line |
+| images/coconut-charcoal-final-inspection-area.jpg | "Final inspection area" sign on the line — used 2026-11-26 |
 
 ## SEO rules
 1. Keyword research first: check how buyers search (top results, "People also ask"), pick 2–4 secondary keywords and natural variants (shisha/hookah charcoal, coconut charcoal/coconut shell charcoal briquettes, supplier/exporter from Indonesia, wholesale/bulk).
@@ -75,7 +75,7 @@ Every article sets `"image"` to ONE photo from `images/catalog.json` (real photo
 ## Topic bank (topic → suggested primary keyword)
 Mark used topics in `topics-used.md`.
 1. Natural coconut shisha charcoal vs quick-light charcoal → natural coconut shisha charcoal (DONE 2026-11-23)
-2. How to vet an Indonesian coconut charcoal supplier (due-diligence checklist) → coconut charcoal supplier Indonesia
+2. How to vet an Indonesian coconut charcoal supplier (due-diligence checklist) → coconut charcoal supplier Indonesia (DONE 2026-11-26)
 3. Hardwood vs coconut shell BBQ briquettes: buyer comparison → coconut BBQ briquettes
 4. Keeping coconut charcoal dry from factory to container → coconut charcoal moisture
 5. What ash colour and ash content tell shisha charcoal buyers → shisha charcoal ash content
